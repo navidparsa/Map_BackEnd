@@ -30,7 +30,7 @@ namespace map_backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var ConnectionString = @"Data Source=DESKTOP-JLDRL27\SQL2014;Initial Catalog=Map;Integrated Security=True";
+            var ConnectionString = @"Data Source=PARSAN;Initial Catalog=Map;Integrated Security=True";
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<MapDbContext>(options => options.UseSqlServer(ConnectionString));
             services.AddDbContext<UserDbContext>(options => options.UseSqlServer(ConnectionString));

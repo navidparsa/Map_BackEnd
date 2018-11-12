@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace mapbackend.Migrations
 {
-    public partial class InitialUser : Migration
+    public partial class InitUser : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

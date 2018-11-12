@@ -28,9 +28,9 @@ namespace mapbackend.Migrations
 
                     b.Property<string>("label");
 
-                    b.Property<string>("latitude");
+                    b.Property<decimal>("lat");
 
-                    b.Property<string>("longitude");
+                    b.Property<decimal>("lng");
 
                     b.HasKey("ID");
 
