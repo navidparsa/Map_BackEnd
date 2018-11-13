@@ -80,7 +80,7 @@ namespace map_backend.Controllers
                 }
             }
 
-            return NoContent();
+            return CreatedAtAction("GetLocation", new { id = location.ID }, location);
         }
 
         // POST: api/Locations
