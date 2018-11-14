@@ -12228,11 +12228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\navid\\Desktop\\Map_BackEnd\\map-backend\\map-backend.csproj",
+      "projectUniqueName": "C:\\Users\\navid\\WorkSpace\\angular\\Map_BackEnd\\map-backend\\map-backend.csproj",
       "projectName": "map-backend",
-      "projectPath": "C:\\Users\\navid\\Desktop\\Map_BackEnd\\map-backend\\map-backend.csproj",
+      "projectPath": "C:\\Users\\navid\\WorkSpace\\angular\\Map_BackEnd\\map-backend\\map-backend.csproj",
       "packagesPath": "C:\\Users\\navid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\navid\\Desktop\\Map_BackEnd\\map-backend\\obj\\",
+      "outputPath": "C:\\Users\\navid\\WorkSpace\\angular\\Map_BackEnd\\map-backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
