@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using map_backend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace map_backend.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class LocationsController : ControllerBase
@@ -22,9 +24,10 @@ namespace map_backend.Controllers
 
         // GET: api/Locations
         [HttpGet]
-        public IEnumerable<Location> GetLocations()
+        public IEnumerable<Location> GetLocations([FromQuery] int pageNumber=1,int pageSize=3)
         {
-            return _context.Locations;
+            var x= _context.Locations.Skip(pageSize * pageNumber).Take(pageSize);
+            return x;
         }
 
         // GET: api/Locations/5
@@ -78,7 +81,7 @@ namespace map_backend.Controllers
                 }
             }
 
-            return NoContent();
+            return CreatedAtAction("GetLocation", new { id = location.ID }, location);
         }
 
         // POST: api/Locations

@@ -10,7 +10,7 @@ using map_backend.Models;
 namespace mapbackend.Migrations
 {
     [DbContext(typeof(UserDbContext))]
-    [Migration("20181111204158_InitialUser")]
+    [Migration("20181114193552_InitialUser")]
     partial class InitialUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

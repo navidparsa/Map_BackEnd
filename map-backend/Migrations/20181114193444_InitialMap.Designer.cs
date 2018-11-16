@@ -9,7 +9,7 @@ using map_backend.Models;
 namespace mapbackend.Migrations
 {
     [DbContext(typeof(MapDbContext))]
-    [Migration("20181111204114_InitialMap")]
+    [Migration("20181114193444_InitialMap")]
     partial class InitialMap
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,9 +30,9 @@ namespace mapbackend.Migrations
 
                     b.Property<string>("label");
 
-                    b.Property<string>("latitude");
+                    b.Property<decimal>("lat");
 
-                    b.Property<string>("longitude");
+                    b.Property<decimal>("lng");
 
                     b.HasKey("ID");
 
